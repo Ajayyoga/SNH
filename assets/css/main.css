@@ -1,0 +1,673 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Merriweather", sans-serif;
+}
+.common-bgcolor {
+  background-color: #006838;
+  color: white;
+}
+.common-color {
+  color: #006838;
+}
+.common-lightbg {
+  background-color: #f8fcfa;
+}
+.common-lightgreen {
+  color: #17bb6f;
+}
+.border-color {
+  border-bottom: 5px solid #17bb6f;
+}
+.container {
+  padding: 0 15px 0 15px;
+}
+.navbar {
+  padding: 0 15px 0 15px;
+}
+
+@media (min-width: 768px) {
+  @media (min-width: 992px) {
+    .container {
+      padding: 0 5rem 0 5rem;
+    }
+  }
+}
+/*================ navber section start==================== */
+#hospital-admit {
+  padding: 30px 30px;
+  text-align: center;
+}
+#logo img {
+  width: 80%;
+}
+#logo {
+  text-align: center;
+}
+.topnav {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav-item .active {
+  color: #006838;
+}
+.nav-item {
+  list-style: none;
+}
+.nav-item1 {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.nav-item1:hover {
+  color: #006838;
+}
+.nav-item1::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: #006838;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.nav-item1:hover::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  color: #006838;
+  background-color: #006838;
+  display: block;
+}
+/* =============tablet view======= */
+@media (min-width: 768px) {
+  #hospital-admit {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+  }
+  .nav-item {
+    padding-top: 2rem;
+  }
+  #logo img {
+    width: 50%;
+    padding-bottom: 1rem;
+  }
+  /*=============== desktop view============ */
+  @media (min-width: 900px) {
+    .navbar {
+      display: flex;
+    }
+    #logo {
+      width: 50%;
+      text-align: left;
+      padding-left: 25px;
+    }
+    #logo img {
+      padding-bottom: 0.5rem;
+    }
+    .nav-item {
+      padding-top: 2rem;
+      font-size: 17px;
+    }
+    @media (min-width: 1025px) {
+      .nav-item {
+        padding-top: 4rem;
+      }
+    }
+    .topnav {
+      width: 50%;
+    }
+    .navbar-nav {
+      justify-content: space-evenly;
+    }
+  }
+}
+/* =================header section end============================================== */
+/* ===================banner section start========================= */
+.banner-img {
+  background-image: url(../images/banner.png);
+  width: 100%;
+  height: 60vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top: 3px solid #17bb6f;
+}
+/* =========================tablet view=========== */
+@media (min-width: 768px) {
+  .banner-img {
+    background-position: center;
+  }
+  .img-cont {
+    padding-top: 90px;
+  }
+  /*=============== desktop view============ */
+  @media (min-width: 1025px) {
+    .banner-img {
+      background-position: left;
+    }
+  }
+}
+/* ===================banner section end========================= */
+/* <!-- =====================mediacal counseling section 2 start===========--> */
+.medical-all {
+  padding-bottom: 5rem;
+}
+.medical-box {
+  text-align: center;
+}
+.medi-img {
+  width: 15%;
+  padding: 30px 0px 15px 0px;
+}
+.medical-box {
+  padding-left: 5px;
+  border-bottom: 5px solid #17bb6f;
+  margin: 40px;
+  box-shadow: 0 4px 8px 0 rgba(59, 59, 59, 0.2),
+    0 6px 20px 0 rgba(98, 96, 96, 0.19);
+}
+.medical-cont {
+  word-spacing: 10px;
+  word-break: break-all;
+  padding: 20px 0.5rem 0px 0.5rem;
+  text-align: left;
+  line-height: 30px;
+}
+.rm-btn {
+  font-size: 20px;
+  padding: 2rem 0 2rem 0;
+  font-weight: bold;
+}
+.rm-btn:hover {
+  color: #17bb6f;
+}
+@media (min-width: 992px) {
+  /*=============== desktop view============ */
+  .medical-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .medical-cont {
+    word-spacing: 15px;
+    font-size: 20px;
+    padding: 20px 1rem 4rem 3rem;
+  }
+  .medical-box {
+    width: 40%;
+    margin: 40px;
+  }
+  .rm-btn {
+    padding-bottom: 20px;
+  }
+  .rm-btn1 {
+    padding-top: 0rem;
+  }
+  .rm-btn2 {
+    padding-top: 4rem;
+  }
+  @media (min-width: 1025px) {
+    .medical-box {
+      width: 25%;
+    }
+  }
+}
+/* <!-- =====================mediacal counseling section 2 start===========--> */
+/* <!-- =========================abour our hospital section 3 start==================== --> */
+.about-side-img {
+  background-image: url(../images/side\ img.png);
+  background-size: cover;
+  width: 100%;
+  height: 30vh;
+}
+.about-img img {
+  width: 40%;
+  position: relative;
+}
+.about-img {
+  position: relative;
+  top: 50px;
+  text-align: center;
+}
+.about-head span {
+  display: inline-block;
+  padding-bottom: 8px;
+  margin-left: 1rem;
+  border-top: 2px dotted #17bb6f;
+  width: 25%;
+}
+.about-content {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 4rem;
+} /* ==========================tablet view=========== */
+@media (min-width: 768px) {
+  .our-hospital {
+    display: flex;
+  }
+  .about-img img {
+    width: 35%;
+    height: 35vh;
+  }
+  .about-img {
+    top: 40px;
+  }
+  .about-head span {
+    margin-left: 0.5rem;
+    width: 50%;
+  }
+  .about-content {
+    padding-top: 7rem;
+  }
+} /*=============== ===========desktop view============ */
+@media (min-width: 991px) {
+  .about-side-img {
+    width: 30%;
+    height: 80vh;
+    display: flex;
+  }
+  .about-img img {
+    width: 100%;
+    height: 65vh;
+    top: 10px;
+    left: 10rem;
+  }
+  .about-content {
+    width: 50%;
+    font-size: 16px;
+    padding-left: 8rem;
+    padding-top: 0rem;
+  }
+  .about-all {
+    display: flex;
+  } /*===============big desktop view============ */
+  @media (min-width: 1200px) {
+    .about-side-img {
+      width: 30%;
+      height: 80vh;
+      display: flex;
+    }
+    .about-img img {
+      width: 100%;
+      height: 65vh;
+      top: 30px;
+      left: 23rem;
+    }
+    .about-content {
+      width: 50%;
+      line-height: 30px;
+      font-size: 20px;
+      padding-left: 15rem;
+      padding-top: 4rem;
+    }
+  }
+}
+/* <!-- =========================about our hospital section 3 end============================= --> */
+/* <!-- =========================Fshanthi Nursing Home section 4 start===================== --> */
+.nursing-home {
+  font-size: 25px;
+  padding: 3rem 0px 3rem 1rem;
+}
+.nursing-home {
+  display: flex;
+  width: 93%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.nursing-home:after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+  color: #17bb6f;
+}
+.nursing-home:after {
+  margin: 0 0 0 20px;
+}
+.nursing-box {
+  margin: 15px;
+  padding: 0 0.5rem 0 1.5rem;
+}
+.nursing-cont {
+  word-spacing: 15px;
+  font-size: 20px;
+  padding: 2rem 0px 3rem 0px;
+  word-break: break-all;
+}
+.bodypart-img {
+  width: 30%;
+  padding: 20px 0px 15px 0px;
+}
+@media (min-width: 768px) {
+  .nursing-home {
+    padding: 3rem 0px 3rem 3rem;
+  }
+  .nursing-boxall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .nursing-box {
+    width: 40%;
+    margin: 10px;
+    padding: 0 0.5rem 0 1.5rem;
+    word-break: break-all;
+  }
+  .nursing-cont {
+    word-spacing: 15px;
+    font-size: 20px;
+    padding: 2rem 0px 3rem 0px;
+    line-height: 35px;
+  }
+  @media (min-width: 1024px) {
+    .nursing-box {
+      width: 15%;
+      margin: 15px;
+      padding: 0 3rem 0 2rem;
+    }
+    .nursing-home {
+      font-size: 35px;
+    }
+  }
+}
+/* <!-- =========================Fshanthi Nursing Home section 4 start===================== --> */
+/* <!-- ===============================Excellent Team section 5 start ========================--> */
+.over-all {
+  padding: 4rem 0px 4rem 0px;
+}
+.excellent-img {
+  background-image: url(../images/center\ pic.png);
+  height: 50vh;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+}
+.our-team {
+  padding-top: 10rem;
+  font-size: 23px;
+} /* ===============tablet view=========== */
+@media (min-width: 768px) {
+  .our-team {
+    padding-top: 10rem;
+    font-size: 30px;
+  } /*========================== desktop view============ */
+  @media (min-width: 1025px) {
+    .our-team {
+      font-size: 35px;
+    }
+  }
+}
+/* <!-- ===============================Excellent Team section 5 end ========================--> */
+.common-class.hospital {
+  font-weight: 700;
+  font-size: 50px;
+  padding: 35px 0 0 110px;
+  color: #006838;
+}
+.common-class.hospital {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*add and adjust the lines*/
+
+.common-class.hospital:after {
+  content: "";
+  border-top: 2px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+  color: #17bb6f;
+}
+
+/*add spacing between heading and line*/
+
+.common-class.hospital:after {
+  margin: 0 0 0 20px;
+}
+@media screen and (min-width: 360px) {
+  .common-class.hospital {
+    padding-left: 31px;
+  }
+  .logo {
+    text-align: center;
+  }
+  img.logo1 {
+    width: 80%;
+  }
+  h1.head1 {
+    padding: 100px 0 0 70px;
+    font-size: 26px;
+    color: #006838;
+  }
+  p.para1 {
+    padding: 6px 0 0 70px;
+    color: #006838;
+    font-size: 25px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  /* SIXTH SECTION START */
+  .four-doctors {
+    margin: 15px;
+    text-align: center;
+  }
+  #first-patient {
+    width: 100%;
+  }
+  .physician {
+    color: #317b31;
+  }
+  .hr1 {
+    display: inline-block;
+    color: #006838;
+    width: 50%;
+  }
+  .doctor-merin {
+    border: 1px solid #eee0ef;
+    background-color: whitesmoke;
+  }
+  .common-class.merin {
+    font-size: 23px;
+    padding: 15px 0 15px 0;
+    color: #006838;
+  }
+  .para-2 {
+    padding: 10px;
+  }
+  p.read-more {
+    color: #006838;
+    padding-top: 10px;
+    font-weight: 700;
+  }
+  p.read-more:hover {
+    color: #5ebe90;
+  }
+  .fa-solid {
+    word-spacing: 2px;
+  }
+  i#angle-arrow {
+    padding-right: 130px;
+    color: #006838;
+  }
+
+  i#angle-rightarrow {
+    padding-left: 130px;
+    color: #006838;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-2 {
+    display: flex;
+  }
+  .four-doctors {
+    width: 50%;
+  }
+  .section-4 {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .doctors-section {
+    display: flex;
+    margin: 50px;
+    padding: 0px 50px;
+  }
+}
+/* FOOTER SECTION */
+li {
+  list-style: none;
+  line-height: 35px;
+}
+li:hover {
+  color: #17bb6f;
+}
+.snh-box {
+  padding: 40px 0px 40px 0px;
+  word-spacing: 5px;
+  line-height: 25px;
+}
+.location p {
+  line-height: 35px;
+}
+.location p:hover {
+  color: #17bb6f;
+}
+.logo2 {
+  padding: 0px 0px 30px 0px;
+}
+.head-all {
+  padding: 20px 0 20px 0;
+}
+@media screen and (min-width: 360px) {
+  i#angle-arrow {
+    display: block;
+    padding: 11px 0 0 171px;
+    font-size: 42px;
+    color: #006838;
+  }
+  i#angle-rightarrow {
+    display: block;
+    padding: 11px 0 0 171px;
+    font-size: 42px;
+    color: #006838;
+  }
+}
+/* ===============tablet view=========== */
+@media (min-width: 768px) {
+  .hospital-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .snh-box {
+    padding: 80px 0px 60px 0px;
+    width: 40%;
+  }
+  i#angle-arrow {
+    display: block;
+    padding: 200px 0 0 15px;
+    font-size: 42px;
+    color: #006838;
+  }
+  i#angle-rightarrow {
+    display: block;
+    padding: 200px 0 0 15px;
+    font-size: 42px;
+    color: #006838;
+  }
+}
+/* =================desktop view============ */
+@media (min-width: 1025px) {
+  .snh {
+    width: 30%;
+  }
+  .snh p {
+    padding-right: 6rem;
+  }
+  .location,
+  .link,
+  .open {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .check-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .checkbox-1 {
+    width: 49%;
+    padding: 6px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  .logo {
+    padding-left: 20px;
+  }
+  h1.head1 {
+    padding: 20px 0 0 100px;
+    font-size: 50px;
+  }
+  p.para1 {
+    padding-left: 117px;
+  }
+  .about-side-img.common-lightbg {
+    height: 51rem;
+  }
+  .about-img img {
+    width: 111%;
+    height: 65%;
+    top: 146px;
+    left: 17rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+  .banner-img {
+    width: 100%;
+    height: 60vh;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 3px solid #17bb6f;
+  }
+  i#angle-arrow {
+    display: block;
+    padding: 180px 13px 0 0;
+    font-size: 42px;
+    color: #006838;
+  }
+  i#angle-rightarrow {
+    display: block;
+    padding: 180px 0 0 13px;
+    font-size: 42px;
+    color: #006838;
+  }
+}
+/* ------footer starts here--------- */
+footer {
+  padding-top: 2px;
+  text-align: center;
+}
+.footer-head:hover {
+  color: #17bb6f;
+}
+.footer-head {
+  padding: 20px 0px 20px 0px;
+}
+/* ------footer ends here--------- */
